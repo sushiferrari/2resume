@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat-style Start Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar__top">
+      <div class="logo">⌘</div>
+      <button class="btn btn--ghost btn--full">New chat</button>
+      <button class="btn btn--ghost btn--full">Search chats</button>
+      <button class="btn btn--ghost btn--full">Library</button>
+      <div class="rule"></div>
+    </div>
+
+    <div class="sidebar__section">
+      <div class="section-title">Projects</div>
+      <button class="item">New project</button>
+      <button class="item">K University</button>
+      <button class="item">Disc Golf</button>
+    </div>
+
+    <div class="sidebar__section sidebar__section--grow">
+      <div class="section-title">Chats</div>
+      <button class="item">Clean up CSS file</button>
+      <button class="item">CSS hover selector</button>
+      <button class="item">Packet-switched networks</button>
+    </div>
+
+    <div class="sidebar__bottom">
+      <div class="account">
+        <div class="avatar">LP</div>
+        <div class="who">
+          <div class="name">Luke Picquet</div>
+          <div class="plan">Plus</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="product">ChatGPT 5 ▾</div>
+      <div class="actions">
+        <button class="icon-btn" aria-label="Settings">⚙️</button>
+      </div>
+    </header>
+
+    <section class="canvas">
+      <h1 class="headline">Where should we begin?</h1>
+
+      <div class="prompt">
+        <button class="prompt__prefix" aria-label="New chat">＋</button>
+        <input class="prompt__input" placeholder="Ask anything" />
+        <div class="prompt__suffix">
+          <button class="chip" aria-label="Voice">🎤</button>
+          <button class="chip" aria-label="Audio">〰️</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">Text-dim • Built with HTML &amp; CSS • Demo layout</p>
+    </footer>
+  </main>
+</body>
+</html>
