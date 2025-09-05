@@ -1,0 +1,108 @@
+/* =========================
+   RESET & BASE STYLES
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding/border in total width/height */
+}
+
+html, body {
+  font-family: "Open Sans", Arial, sans-serif; /* Modern clean font */
+  font-size: 16px; /* Base font size */
+  color: #1e1e1e; /* Main text color */
+  background-color: #f8f9fa; /* Light gray background */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* =========================
+   LAYOUT CONTAINERS
+   ========================= */
+.container {
+  max-width: 1200px; /* Limits page width */
+  margin: 0 auto; /* Centers content */
+  padding: 20px;
+}
+
+/* =========================
+   HEADINGS & TEXT
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #212529; /* Dark heading color */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #495057; /* Slightly lighter gray for body text */
+}
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+nav {
+  background-color: #343a40; /* Dark background */
+  padding: 15px 20px;
+}
+
+nav a {
+  color: #f8f9fa; /* White links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ffc107; /* Gold hover color */
+}
+
+/* =========================
+   SECTIONS / CONTENT BLOCKS
+   ========================= */
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+button, .btn {
+  display: inline-block;
+  background-color: #007bff; /* Bootstrap blue */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+img {
+  max-width: 100%; /* Responsive images */
+  border-radius: 6px;
+  display: block;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  text-align: center;
+  color: #6c757d;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-top: 1px solid #dee2e6;
+}
