@@ -30,7 +30,7 @@
   --shadow:0 10px 28px rgba(0,0,0,.25);
 }
 
-/* ===== Reset / Base ===== */
+/* Body Font / Color Input */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
@@ -40,7 +40,7 @@ body{
 }
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
-/* ===== Sidebar + Main ===== */
+/* Sidebar Dimensions */
 .sidebar{
   position:fixed; inset:0 auto 0 0; width:var(--sidebar-w);
   background:var(--surface); border-right:1px solid var(--border);
@@ -52,14 +52,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   background:var(--surface-2);
 }
 
-/* ===== Sidebar content ===== */
+/* "ChatGPT" logo Dimensions */
 .logo{
   width:36px;height:36px;border-radius:10px; display:grid;place-items:center;
   background:var(--surface-2); border:1px solid var(--border); color:var(--text);
   margin-bottom:10px;
 }
 .rule{height:1px;background:var(--border);margin:8px 0}
-
+/* Sidebar Dimensions */
 .sidebar__top{display:flex;flex-direction:column;gap:8px}
 .sidebar__section{display:flex;flex-direction:column;gap:6px}
 .sidebar__section--grow{flex:1 1 auto; overflow:auto}
