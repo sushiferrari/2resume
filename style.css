@@ -139,3 +139,4 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .sidebar .btn--full, .section-title, .item, .who, .avatar { display:none }
   .logo{ margin:4px auto 8px }
 }
+.hidden { display: none !important; }
