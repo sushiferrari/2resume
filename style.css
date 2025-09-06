@@ -1,4 +1,4 @@
-/* ===== Font (optional; remove @font-face if you want zero externals) ===== */
+/* OpenAI Font Link */
 @font-face{
   font-family:"OpenAI Sans";
   font-weight:300 700;
@@ -7,7 +7,7 @@
       url("https://cdn.openai.com/common/fonts/openai-sans-variable/OpenAISansVariableVF.woff") format("woff");
 }
 
-/* ===== Theme tokens (dark) ===== */
+/* Colors */
 :root{
   --bg:#0F1115;
   --surface:#141821;
