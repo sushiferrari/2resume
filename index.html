@@ -14,7 +14,7 @@
 <!-- Leftbar -->
     <aside class="sidebar"> 
       <div class="sidebar__top"> <div class="logo">⌘</div> 
-        <button class="btn btn--ghost btn--full">Contact Me</button> 
+        <button class="btn btn--ghost btn--full" onclick="showSection('contact')">Contact Me</button> 
         <button class="btn btn--ghost btn--full">Education</button> 
         <button class="btn btn--ghost btn--full">Experience</button> 
         <div class="rule"></div> 
@@ -25,7 +25,7 @@
         <button class="item">New project</button> 
         <button class="item">Business Analytics</button> 
         <button class="item">SAP Simulation</button> 
-        <button class="item">Sustainable Fish Tank></button> 
+        <button class="item">Sustainable Fish Tank</button> 
       </div> 
 <!-- Skill Section -->
       <div class="sidebar__section sidebar__section--grow"> 
@@ -60,13 +60,14 @@
         <h1 class="headline">Kirsten Capangpangan?</h1> 
         <div class="prompt"> 
           <button class="prompt__prefix" aria-label="New chat">＋</button> 
+        </div>
+      </section>
 <!-- Contact Me Canvas -->
       <section id="contact" class="canvas section">
           <h1 class="headline">Contact Information</h1>
           <p><a href="mailto:kec040@uark.edu">kec040@uark.edu</a></p>
           <p><a href="tel:+12538616518">(253) 861‑6518</a></p>
           <p><a href="https://www.linkedin.com/in/kirstencap" target="_blank">LinkedIn</a></p>
-          <button class="btn btn--ghost btn--full" onclick="showsection('contact')">Contact Me</button>
       </section>
             
 <!-- Search panel input -->
@@ -84,6 +85,11 @@
       </footer> 
     </main> 
     <script src="app.js" defer>
+      function showSection(id) {
+        document.querySelectorALL('.section').forEach(sec => sec.classList.remove('active'));
+        const target = document.getElementByID(id);
+        if (target) target.classlist.add('active');
+      }
     </script> 
   </body> 
 </html>
