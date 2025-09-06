@@ -3,39 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ResumeKEC</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Capangpangan - Resume</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
   body { background:#0F1115; color:#E7E9EE; }
   .prompt { border:2px dashed #10A37F; }
 </style>
 
 </head>
-
-<script>
-  const homeSection = document.querySelector(".canvas");      // your main page
-  const contactSection = document.getElementById("view-contact");
-
-  function showSection() {
-    const hash = window.location.hash;
-    if (hash === "#/contact") {
-      homeSection.classList.add("hidden");
-      contactSection.classList.remove("hidden");
-    } else {
-      homeSection.classList.remove("hidden");
-      contactSection.classList.add("hidden");
-    }
-  }
-
-  window.addEventListener("hashchange", showSection);
-  window.addEventListener("DOMContentLoaded", showSection);
-</script>
-
 <body>
   <aside class="sidebar">
     <div class="sidebar__top">
       <div class="logo">⌘</div>
-      <a href="#/contact" class="btn btn--ghost btn--full">Contact Me</a>
+      <button class="btn btn--ghost btn--full">Contact Me</button>
       <button class="btn btn--ghost btn--full">Education</button>
       <button class="btn btn--ghost btn--full">Experience</button>
       <div class="rule"></div>
@@ -89,23 +69,10 @@
         </div>
       </div>
     </section>
-    <section id="view" class="canvas" aria-live="polite"></section>
 
     <footer class="footer">
       <p class="muted">Expected Graduation Date • May 2026</p>
     </footer>
-<!-- Contact Me Page -->
-    <section id="view-contact" class="canvas hidden">
-  <div class="card">
-    <h2>Contact Me</h2>
-    <p>Phone Number: <a href="tel:+12538616518">(253) 861-6518</a></p>
-    <p>Email: <a href="mailto:kec040@uark.edu">kec040@uark.edu</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/kirstencap" target="_blank">kirstencap</a></p>
-  </div>
-</section>
-
   </main>
-
-  <script src="app.js" defer></script>
 </body>
 </html>
